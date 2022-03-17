@@ -1,0 +1,251 @@
+* {
+  padding: 0;
+  margin: 0;
+
+  background-color: #ffffff;
+}
+
+.container-fluid {
+  background-color: #08072c;
+}
+
+h1.H1 {
+  font-family: 'Montserrat', sans-serif;
+  background-color: transparent;
+  text-align: center;
+  padding: 30px;
+  color: #402c33;
+  font-weight: bold;
+}
+
+.Subtitulos {
+  font-family: 'Montserrat', sans-serif;
+  color: #6b4e4e;
+  font-size: 30px;
+  font-weight: lighter;
+  background: none;
+}
+
+.form-control {
+  box-shadow: 8px 4px 30px rgb(0, 0, 0);
+  font-family:serif;
+}
+
+.Subir, .Guardar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 8vh;
+  background: var(--color-black-1);
+  position:center;
+  width: 200px;
+  height: 18px;
+  margin-left: 35%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  line-height: 60px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 40px;
+  color: var(--color-white);
+  transition: var(--speed-normal);
+  border: 1px solid var(--color-red);
+  /*width: 270px;
+  height: 80px;
+  border: none;
+  outline: none;
+  background: #2f2f2f;
+  color: #fff;
+  font-size: 22px;
+  border-radius: 40px;
+  text-align: center;
+  box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
+  position: center;
+  overflow: hidden;
+  cursor: pointer;
+  margin-left: 35%;
+  margin-bottom: 20px;
+  margin-top: 20px;*/
+}
+:root {
+  --color-red: #ec1840;
+  --color-purple: #7a18ec;
+  --color-white: #fff;
+  --color-black-1: #111;
+  --color-black-2: #222;
+  --color-black-3: #444;
+  --speed-normal: 0.5s;
+  --speed-fast: 0.8s;
+}
+.Guardar:hover {
+  border: 1px solid transparent;
+  background: var(--color-red) url(https://i.postimg.cc/wBXGXbWN/pixel.png);
+  transition-delay: 0.8s;
+  background-size: 180px;
+  -webkit-animation: animate var(--speed-fast) steps(8) forwards;
+          animation: animate var(--speed-fast) steps(8) forwards;
+}
+.Guardar:last-of-type {
+  border: 1px solid var(--color-purple);
+}
+.Guardar:last-of-type:hover {
+  background: var(--color-purple) url(https://i.postimg.cc/FzBWFtKM/pixel2.png);
+}
+.Subir:hover {
+  border: 1px solid transparent;
+  background: var(--color-red) url(https://i.postimg.cc/wBXGXbWN/pixel.png);
+  transition-delay: 0.8s;
+  background-size: 180px;
+  -webkit-animation: animate var(--speed-fast) steps(8) forwards;
+          animation: animate var(--speed-fast) steps(8) forwards;
+}
+.Subir:last-of-type {
+  border: 1px solid var(--color-purple);
+}
+.Subir:last-of-type:hover {
+  background: var(--color-purple) url(https://i.postimg.cc/FzBWFtKM/pixel2.png);
+}
+@-webkit-keyframes animate {
+  0% {
+    background-position-y: 0;
+  }
+  100% {
+    background-position-y: -480px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-y: 0;
+  }
+  100% {
+    background-position-y: -480px;
+  }
+}
+.group{
+  background: transparent;
+}
+
+.form-group{
+  background: transparent;
+}
+
+nav {
+  font-size: 20px;
+  font-family: "Bentham", serif;
+}
+
+
+.container-contact100 {
+  width: 100%;  
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  position: relative;
+  background-color: #f2f2f2;
+}
+
+.wrap-contact100 {
+  width: 550px;
+  background: transparent;
+  padding: 50px 0px 160px 0px;
+}
+
+
+/*==================================================================
+[ Form ]*/
+
+.contact100-form {
+  width: 100%;
+}
+
+.contact100-form-title {
+  display: block;
+  font-family: Ubuntu-Bold;
+  font-size: 30px;
+  color: #403866;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 49px;
+}
+
+/*------------------------------------------------------------------
+[ cajas ]*/
+
+.wrap-caja {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 31px;
+  margin-bottom: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.caja {
+  position: relative;
+  display: block;
+  width: 100%;
+  background: #fff;
+  border-radius: 31px;
+  font-family: Ubuntu-Bold;
+  font-size: 18px;
+  color: #8f8fa1;
+  line-height: 1.2;
+}
+
+
+/*---------------------------------------------*/
+input.caja {
+  height: 62px;
+  padding: 0 35px 0 35px;
+}
+
+
+textarea.caja {
+  min-height: 169px;
+  padding: 19px 35px 0 35px;
+}
+
+
+.focus-caja {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-radius: 31px;
+  background-color: #fff;
+  pointer-events: none;
+  
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.caja:focus + .focus-caja {
+  width: calc(100% + 20px);
+}
+
+/*botones chidos*/
+
+
+
