@@ -1,0 +1,254 @@
+* {
+  padding: 0;
+  margin: 0;
+
+  background-color: #ffffff;
+}
+
+.container-fluid {
+  background-color: #4b4b66;
+}
+
+h1.H1 {
+  color: #6B6A82;
+  font-size: calc(1em + 8vw);
+  font-weight: 900;
+  text-shadow: -0.0075em 0.0075em 0 #8a8cb1, 0.005em 0.005em 0 #8176b1, 0.01em 0.01em 0 #685983, 0.015em 0.015em #756894, 0.02em 0.02em 0 #b3c3f8, 0.025em 0.025em 0 #4b4b66, 0.03em 0.03em 0 #727292, 0.035em 0.035em 0 #505a6e;
+
+}
+
+.Subtitulos {
+  font-family: 'Bebas Neue';
+ 
+  color: #6b4e4e;
+  font-size: 30px;
+  font-weight: lighter;
+  background: none;
+}
+
+.form-control {
+  box-shadow: 8px 4px 30px rgb(0, 0, 0);
+  font-family:'Bebas Neue';
+ 
+}
+
+
+
+.Subir, .Guardar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 8vh;
+  background: var(--color-black-1);
+  position:center;
+  width: 200px;
+  height: 18px;
+  margin-left: 35%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  line-height: 60px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 40px;
+  color: #fff;
+  transition: var(--speed-normal);
+  border: 1px solid var(--color-red);
+  /*width: 270px;
+  height: 80px;
+  border: none;
+  outline: none;
+  background: #2f2f2f;
+  color: #fff;
+  font-size: 22px;
+  border-radius: 40px;
+  text-align: center;
+  box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
+  position: center;
+  overflow: hidden;
+  cursor: pointer;
+  margin-left: 35%;
+  margin-bottom: 20px;
+  margin-top: 20px;*/
+}
+:root {
+  --color-red: #8a8cb1;
+  --color-purple: #8176b1;
+  --color-white: #685983;
+  --color-black-1: #4b4b66;
+  --color-black-2: #b3c3f8;
+  --color-black-3: #727292;
+  --speed-normal: 0.5s;
+  --speed-fast: 0.8s;
+}
+.Guardar:hover {
+  border: 1px solid transparent;
+  background: var(--color-red) url(https://cdn.discordapp.com/attachments/843613696307757096/953865828766474291/pixel3.png);
+  transition-delay: 0.8s;
+  background-size: 180px;
+  -webkit-animation: animate var(--speed-fast) steps(8) forwards;
+          animation: animate var(--speed-fast) steps(8) forwards;
+}
+.Guardar:last-of-type {
+  border: 1px solid var(--color-purple);
+}
+.Guardar:last-of-type:hover {
+  background: var(--color-purple) url(https://cdn.discordapp.com/attachments/843613696307757096/953865828766474291/pixel3.png);
+}
+.Subir:hover {
+  border: 1px solid transparent;
+  background: var(--color-red) url(https://cdn.discordapp.com/attachments/843613696307757096/953865828766474291/pixel3.png);
+  transition-delay: 0.8s;
+  background-size: 180px;
+  -webkit-animation: animate var(--speed-fast) steps(8) forwards;
+          animation: animate var(--speed-fast) steps(8) forwards;
+}
+.Subir:last-of-type {
+  border: 1px solid var(--color-purple);
+}
+.Subir:last-of-type:hover {
+  background: var(--color-purple) url(https://cdn.discordapp.com/attachments/843613696307757096/953865828766474291/pixel3.png);
+}
+@-webkit-keyframes animate {
+  0% {
+    background-position-y: 0;
+  }
+  100% {
+    background-position-y: -480px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-y: 0;
+  }
+  100% {
+    background-position-y: -480px;
+  }
+}
+.group{
+  background: transparent;
+}
+
+.form-group{
+  background: transparent;
+}
+
+nav {
+  font-size: 20px;
+  font-family: 'Bebas Neue';
+}
+
+
+.container-contact100 {
+  width: 100%;  
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  position: relative;
+  background-color: #f2f2f2;
+}
+
+.wrap-contact100 {
+  width: 550px;
+  background: transparent;
+  padding: 50px 0px 160px 0px;
+}
+
+
+/*==================================================================
+[ Form ]*/
+
+.contact100-form {
+  width: 100%;
+}
+
+.contact100-form-title {
+  display: block;
+  font-family: 'Bebas Neue';
+  font-size: 30px;
+  color: #727292;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 49px;
+}
+
+/*------------------------------------------------------------------
+[ cajas ]*/
+
+.wrap-caja {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 31px;
+  margin-bottom: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.caja {
+  position: relative;
+  display: block;
+  width: 100%;
+  background: #fff;
+  border-radius: 31px;
+  font-family:'Bebas Neue';
+  font-size: 18px;
+  color: #8f8fa1;
+  line-height: 1.2;
+}
+
+
+/*---------------------------------------------*/
+input.caja {
+  height: 62px;
+  padding: 0 35px 0 35px;
+}
+
+
+textarea.caja {
+  min-height: 169px;
+  padding: 19px 35px 0 35px;
+}
+
+
+.focus-caja {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-radius: 31px;
+  background-color: #fff;
+  pointer-events: none;
+  
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.caja:focus + .focus-caja {
+  width: calc(100% + 20px);
+}
+
+/*botones chidos*/
+
+
+
